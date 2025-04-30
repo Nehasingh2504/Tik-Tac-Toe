@@ -1,24 +1,29 @@
-🕹️ ** Tic-Tac-Toe Game **
+
+# 🕹️ Tic-Tac-Toe Game
+
 A visually engaging and functional Tic-Tac-Toe game built using HTML, CSS, and JavaScript. This project demonstrates DOM manipulation, game logic, and event handling in a clean and beginner-friendly way.
 
-🎮 Features
-Two-player mode (X vs O)
 
-Turn-based interaction with status update
 
-Automatic win detection
+## 🎮 Features
 
-Draw (tie) recognition
+- Two-player mode (X vs O)
+- Turn-based interaction with status update
+- Automatic win detection
+- Draw (tie) recognition
+- Reset/new game functionality
+- Clean and centered layout
+- Responsive and clean user interface
 
-Reset/new game functionality
 
-Clean and centered layout
+## 📁 Technologies Used
 
-Responsive and clean user interface
+- HTML5 – structure of the game board
+- CSS3 – styling and layout
+- JavaScript – game logic and interactions
 
-📁 Technologies Used
-HTML5 – structure of the game board
 
-CSS3 – styling and layout
+## Demo
 
-JavaScript – game logic and interactions
+Insert gif or link to demo
+
