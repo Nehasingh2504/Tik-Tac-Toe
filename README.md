@@ -3,7 +3,7 @@
 
 A visually engaging and functional Tic-Tac-Toe game built using HTML, CSS, and JavaScript. This project demonstrates DOM manipulation, game logic, and event handling in a clean and beginner-friendly way.
 
-
+---
 
 ## 🎮 Features
 
@@ -15,6 +15,7 @@ A visually engaging and functional Tic-Tac-Toe game built using HTML, CSS, and J
 - Clean and centered layout
 - Responsive and clean user interface
 
+---
 
 ## 📁 Technologies Used
 
@@ -22,6 +23,16 @@ A visually engaging and functional Tic-Tac-Toe game built using HTML, CSS, and J
 - CSS3 – styling and layout
 - JavaScript – game logic and interactions
 
+---
+
+## 📸 Preview
+
+![Screenshot_1](https://github.com/user-attachments/assets/58e3a02d-b5d9-428f-a9d8-e917119cf1e9)
+![Screenshot_2](https://github.com/user-attachments/assets/6885f659-58a4-4fd0-971a-5268ef9162e1)
+![Screenshot_3](https://github.com/user-attachments/assets/c9ae4c72-3089-4473-b2f4-d1ad502447bc)
+![Screenshot_4](https://github.com/user-attachments/assets/69e0f185-0a91-4032-82cd-c987eb7c08bb)
+
+---
 
 ## Demo
 
