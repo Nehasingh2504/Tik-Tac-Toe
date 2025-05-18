@@ -36,5 +36,5 @@ A visually engaging and functional Tic-Tac-Toe game built using HTML, CSS, and J
 
 ## Demo
 
-https://drive.google.com/file/d/1eFrn7Mzwg_8K6Esv-VNL3pgiXNw8dyPW/view?usp=drive_link
+[Tik-Tac-Toe-demo](https://drive.google.com/file/d/1eFrn7Mzwg_8K6Esv-VNL3pgiXNw8dyPW/view?usp=drive_link)
 
