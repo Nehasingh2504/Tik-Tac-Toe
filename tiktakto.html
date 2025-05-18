@@ -1,0 +1,208 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            margin-top: 100px;
+            background-color: blanchedalmond;
+        }
+        form{
+            position: absolute;
+        }
+        .button{
+            width: 100px;
+            height: 100px;
+            background-color: blanchedalmond;
+            border: 0 ;
+            font-size: 30px;
+        }
+        .bottom{
+            border-bottom: 3px solid black;
+        }
+        .right{
+            border-right: 3px solid black;
+        }
+        .pencil{
+            width: 350px;
+            height: 60px;
+            position: relative;
+            transform: rotate(45deg);
+            margin: 200px 0 0 -700px;
+            animation: pencilrot 2s ease;
+        }
+        .pencil>div{
+            float: left;
+        }
+        .rub{
+            width: 30px;
+            height: 60px;
+            background-color: aquamarine;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border-right: 7px solid rgb(69, 52, 52);
+        }
+        .wood{
+            width: 200px;
+            height: 60px;
+            background-color: black;
+            position: relative;
+        }
+        .red{
+            width: 200px;
+            height: 15px;
+            background-color: red;
+        }
+        .black{
+            width: 200px;
+            height: 15px;
+            background-color: black;
+        }
+        .tri{
+            width: 70px;
+            height: 1px;
+            border-left: 40px solid burlywood;
+            border-top: 30px solid transparent;
+            border-bottom: 30px solid transparent;
+        }
+    </style>
+    <script>
+        function draw() {
+            for(i=1;i<=9;i++){
+                if(document.getElementById(i).value==''){
+                    return
+                }
+            }
+            if(i==10){
+                alert('DRAW')
+                reset()
+            }
+        }
+        function reset() {
+            for(i=1;i<=9;i++){
+                document.getElementById(i).value=''
+                cnt=0
+            }          
+        }
+        function checkequ(box1,box2,box3,symbol) {
+            if(box1=='X' && box2=='X' && box3=='X'){
+                alert('X wins')
+                return true
+            }
+            else if(box1=='O' && box2=='O' && box3=='O'){
+                alert('o wins')
+                return true
+            }
+            else{
+                return false
+            }
+        }
+        function check(){
+            box1=document.getElementById('1').value
+            box2=document.getElementById('2').value
+            box3=document.getElementById('3').value
+            res=checkequ(box1,box2,box3)
+            if(res==true){
+                reset()
+                return
+            }
+            box1=document.getElementById('4').value
+            box2=document.getElementById('5').value
+            box3=document.getElementById('6').value
+            res=checkequ(box1,box2,box3)
+            if(res==true){
+                reset()
+                return
+            }
+            box1=document.getElementById('7').value
+            box2=document.getElementById('8').value
+            box3=document.getElementById('9').value
+            res=checkequ(box1,box2,box3)
+            if(res==true){
+                reset()
+                return
+            }
+            box1=document.getElementById('1').value
+            box2=document.getElementById('4').value
+            box3=document.getElementById('7').value
+            res=checkequ(box1,box2,box3)
+            if(res==true){
+                reset()
+                return
+            }
+            box1=document.getElementById('2').value
+            box2=document.getElementById('5').value
+            box3=document.getElementById('8').value
+            res=checkequ(box1,box2,box3)
+            if(res==true){
+                reset()
+                return
+            }
+            box1=document.getElementById('3').value
+            box2=document.getElementById('6').value
+            box3=document.getElementById('9').value
+            res=checkequ(box1,box2,box3)
+            if(res==true){
+                reset()
+                return
+            }
+            box1=document.getElementById('1').value
+            box2=document.getElementById('5').value
+            box3=document.getElementById('9').value
+            res=checkequ(box1,box2,box3)
+            if(res==true){
+                reset()
+                return
+            }
+            box1=document.getElementById('3').value
+            box2=document.getElementById('5').value
+            box3=document.getElementById('7').value
+            res=checkequ(box1,box2,box3)
+            if(res==true){
+                reset()
+                return
+            }
+        }
+        let cnt=0
+        function mark(symbol) {
+            if(symbol.value == ''){
+                cnt=cnt+1
+                if(cnt%2==0){
+                    symbol.value='X'
+                    console.log(symbol.value)
+                }
+                else{
+                    symbol.value='O'
+                    console.log(symbol.value)
+                }
+                check()
+                draw()
+            }
+        }
+    </script>
+    <body>
+        <form>
+            <input type="button" class="button bottom right" id="1" onclick="mark(this)">
+            <input type="button" class="button bottom right" id="2" onclick="mark(this)">
+            <input type="button" class="button bottom" id="3" onclick="mark(this)"><br>
+            <input type="button" class="button bottom right" id="4" onclick="mark(this)">
+            <input type="button" class="button bottom right" id="5" onclick="mark(this)">
+            <input type="button" class="button bottom" id="6" onclick="mark(this)"><br>
+            <input type="button" class="button right" id="7" onclick="mark(this)">
+            <input type="button" class="button right" id="8" onclick="mark(this)">
+            <input type="button" class="button" id="9" onclick="mark(this)"><br>
+        </form>
+        <div class="pencil">
+            <div class="rub"></div>
+            <div class="wood">
+                <div class="red"></div>
+                <div class="black"></div>
+                <div class="red"></div>
+                <div class="black"></div>
+            </div>
+            <div class="tri"></div>
+        </div>
+    </body>
+</html>
